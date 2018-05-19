@@ -85,4 +85,11 @@ Temporary Items
 .idea
 *.iml
 out
-gen
+gengit pu
+
+#Custom rules
+_workfiles
+other_version/webdoc/Arrivee_de_la_photographie
+other_version/webdoc/Conservation_de_la_memoire
+other_version/webdoc/Portraits_autoportraits
+other_version/webdoc/Regard_sur_notre_lieu_de_vie

@@ -1,8 +1,11 @@
 $(document).ready(function () {
 
-    $('.main').on('mousewheel', function (event)   {
+    $('.intro').on('mousewheel', function (event) {
+
+        event.preventDefault();
 
         if (event.deltaY < 0) {
+            console.log('down');
             var speed = 2500; // Durée de l'animation (en ms)
             $('html, body').animate({
                     scrollTop: $('.menu').offset().top
@@ -14,17 +17,6 @@ $(document).ready(function () {
             return false;
         }
 
-        if (event.deltaY > 0) {
-            var speed = 2500; // Durée de l'animation (en ms)
-            $('html, body').animate({
-                    scrollTop: $('.intro').offset().top
-                }, {
-                    duration: speed,
-                    easein: "easeOutBounce" //animation ease
-                }
-            );
-            return false;
-        }
     });
 
 });

@@ -1,19 +1,17 @@
 @font-face {
     font-family: "MinionPro-Bold";
-    src:url("../typos/MinionPro-Bold.otf");
+    src: url("../typos/MinionPro-Bold.otf");
 }
 
 @font-face {
     font-family: "MinionPro-It";
-    src:url("../typos/MinionPro-It.otf");
+    src: url("../typos/MinionPro-It.otf");
 }
 
 @font-face {
     font-family: "MinionPro-Regular";
-    src:url("../typos/MinionPro-Regular.otf");
+    src: url("../typos/MinionPro-Regular.otf");
 }
-
-
 
 html, body {
     width: 100%;
@@ -34,7 +32,7 @@ html, body {
     color: #fd7e14;
     font-size: 6rem;
     font-family: "MinionPro-Bold", Times, "Times New Roman", serif;
-    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -43,30 +41,52 @@ html, body {
     margin-top: 2%;
 }
 
+.menu .button_up {
+    position: relative;
+    top: 1%;
+    left: 1%;
+    width: 0;
+    height: 0;
+}
+
+.menu .button_up a {
+    font-family: "MinionPro-Bold", Times, "Times New Roman", serif;
+    color: white;
+}
+
+.menu .button_up a:hover {
+    color: #fd7e14;
+}
+
+.menu a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: white;
+    transition: all 500ms;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #fd7e14;
+    transition: all 1s;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 .menu h3 {
     position: relative;
     top: 80%;
     font-size: 3rem;
 }
 
-.menu h3 a {
-    color: white;
-    transition: all 500ms;
-}
-
-.menu h3 a:hover {
-    text-decoration: none;
-    color: #fd7e14;
-    transition: all 1s;
-}
-
-#apprin{
+#apprin {
     background-image: url("../images/intro.jpg");
     background-size: cover;
     min-height: 512px;
 }
 
-#photo{
+#photo {
     background-image: url("../images/photo.jpg");
     background-size: contain;
     min-height: 512px;
@@ -75,7 +95,7 @@ html, body {
     border: #000 solid 10px
 }
 
-#regards{
+#regards {
     background-image: url("../images/regards.jpg");
     background-size: contain;
     min-height: 512px;
@@ -84,7 +104,7 @@ html, body {
     border: #000 solid 10px
 }
 
-#portrait{
+#portrait {
     background-image: url("../images/portrait.gif");
     background-size: contain;
     min-height: 512px;
@@ -93,21 +113,11 @@ html, body {
     border: #000 solid 10px
 }
 
-#conservation{
+#conservation {
     background-image: url("../images/conservation.jpg");
     background-size: contain;
     min-height: 512px;
     background-repeat: no-repeat;
     background-position: left top;
     border: #000 solid 10px
-}
-
-.masque {
-    mask: url(‘masque.png’);
-    mask-size: 100% 100%;
-    transition: mask-size .3s;
-}
-
-.masque:hover {
-    mask-size: calc(100% / 3) calc(100% / 3);
 }
