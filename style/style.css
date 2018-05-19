@@ -44,14 +44,23 @@ html, body {
 .menu .button_up {
     position: relative;
     top: 1%;
-    left: 1%;
+    left: 93%;
     width: 0;
     height: 0;
+    z-index: 10;
 }
 
 .menu .button_up a {
     font-family: "MinionPro-Bold", Times, "Times New Roman", serif;
     color: white;
+    display: inline-block;
+    white-space: nowrap;
+    background-image: url('../images/chevron-top-8x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 20px;
 }
 
 .menu .button_up a:hover {
