@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.intro').on('mousewheel', function (event) {
+    $('.main').on('mousewheel', function (event)   {
 
         if (event.deltaY < 0) {
             var speed = 2500; // Durée de l'animation (en ms)
